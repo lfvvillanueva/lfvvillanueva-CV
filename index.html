@@ -3,144 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="/Images/cv.png">
 <title>Luis Francisco Venegas Villanueva - CV</title>
-<style>
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    max-height: 95%;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0px;
-  }
-
-  p, h2, li {
-    margin: 0 auto;
-    margin-top: 10PX;
-  }
-
-  a {
-    color: #1e88e5;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .language-switch {
-    text-align: right;
-  }
-  .cv {
-    display: none;
-  }
-  .cv.active {
-    display: block;
-  }
-
-div {
-  margin: auto 0;
-}
-
-  .parent0 {
-display: grid;
-grid-template-columns: 10% 80% 10%;
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div10 { grid-area: 1 / 1 / 2 / 2; }
-.div20 { grid-area: 1 / 2 / 2 / 3; }
-.div30 { grid-area: 1 / 3 / 2 / 4; }
-
-  .parent1 {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding: 0px;
-}
-.div1 { grid-area: 1 / 1 / 2 / 5; }
-.div2 { grid-area: 1 / 5 / 2 / 6; }
-.div3 { grid-area: 2 / 1 / 3 / 5; }
-.div4 { grid-area: 2 / 5 / 3 / 6; }
-
-.parent2 {
-display: grid;
-grid-template-columns: repeat(5, 20%);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div12 { grid-area: 1 / 1 / 2 / 5; }
-.div22 { grid-area: 1 / 5 / 2 / 6; }
-.div32 { grid-area: 2 / 1 / 3 / 5; }
-.div42 { grid-area: 2 / 5 / 3 / 6; }
-.div52 { grid-area: 3 / 1 / 4 / 5; }
-.div62 { grid-area: 3 / 5 / 4 / 6; }
-.div72 { grid-area: 4 / 1 / 5 / 5; }
-.div82 { grid-area: 4 / 5 / 5 / 6; }
-
-.parent3 {
-display: grid;
-grid-template-columns: repeat(5, 20%);
-grid-template-rows: repeat(4, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div13 { grid-area: 1 / 1 / 2 / 5;}
-.div23 { grid-area: 1 / 5 / 2 / 6; }
-.div33 { grid-area: 2 / 1 / 3 / 5; }
-.div43 { grid-area: 2 / 5 / 3 / 6; }
-.div53 { grid-area: 3 / 1 / 4 / 5; }
-.div63 { grid-area: 3 / 5 / 4 / 6; }
-.div73 { grid-area: 4 / 1 / 5 / 5; }
-.div83 { grid-area: 4 / 5 / 5 / 6; }
-
-.parent4 {
-display: grid;
-grid-template-columns: repeat(2, 50%);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div14 { grid-area: 1 / 1 / 2 / 2; }
-.div24 { grid-area: 1 / 2 / 2 / 3; }
-
-</style>
-<script>
-  function switchLanguage(lang) {
-    const cvs = document.querySelectorAll('.cv');
-    cvs.forEach(cv => cv.classList.remove('active'));
-    document.querySelector(`.cv.${lang}`).classList.add('active');
-  }
-</script>
 </head>
+<header>
+  <div class="parentH">
+    <div class="div1H">
+      <a button="" ></a>
+    </div>
+    <div class="div2H">
+    </div>
+    <div class="div3H">
+      <button class="usa-flag" onclick="changeLanguage('en')">English</button>
+      <button onclick="changeLanguage('es')">Español </button>
+    </div>
+    </div>
+</header>
 <body>
-<div class="language-switch">
-  <a href="#" onclick="switchLanguage('es')">Español</a> | <a href="#" onclick="switchLanguage('en')">English</a>
-</div>
-
 <!-- Spanish CV -->
-<div class="cv es active">
+<div id="es-content">
   <br>
   <div style="text-align: center;">
     <div class="parent0">
       <div class="div10"> </div>
       <div class="div20">
         <H1>Luis Francisco Venegas Villanueva</H1>
-        <p>Perla 3651, Residencial Loma Bonita, Zapopan, Jalisco, <a href="mailto:lfvillanueva@gmail.com" target="_blank">lfvillanueva@gmail.com</a></p>
+        <p>Perla 3651, Residencial Loma Bonita, Zapopan, Jalisco, <a href="mailto:luis.venegas4416@alumnos.udg.mx" target="_blank">luis.venegas4416@alumnos.udg.mx</a></p>
       </div>
-      <div class="div30"><img style="max-width: 100%; border-radius: 50%;"  src="My project-1.jpg" alt=""></div>
+      <div class="div30">
+        <img style="max-width: 100%; border-radius: 50%;"  src="/Images/My project-1.jpg">
+      </div>
     </div>
   </div>
   <div>
     <H2>Perfil Profesional</H2>
     <hr color="black" size="1px">
-    <p>Licenciado en Administración Financiera y Sistemas y Derecho, con experiencia en gestión financiera, legal y precios de transferencia. Destrezas en Excel avanzado, Power BI, R y Python, enfocado en análisis de datos y pronósticos. </p>
+    <p>Experto en Administración Financiera y Derecho. Especialista en análisis de datos y pronósticos utilizando tecnologías como Excel avanzado, Power BI, R y Python. Profundo conocimiento en precios de transferencia, con un enfoque en soluciones tecnológicas y análisis predictivo. Buscando impulsar innovaciones en el ámbito financiero y legal mediante la tecnología.</p>
   </div>
   <div>
     <H2>Educacion</H2>
@@ -187,13 +86,13 @@ grid-row-gap: 0px;
     <hr color="black" size="1px">
   </div>
   <div class="parent3">
-    <div class="div13"> 
+    <div class="div13">
       <p>Floor Manager en Corporativo ODE: Coordiné efectivamente actividades y empleados en exposiciones y convenciones de gran envergadura en recintos como Expo Guadalajara y Hotel Hilton. Reportando directamente al director y a los clientes del corporativo, adquirí experiencia en la coordinación de equipos numerosos, la implementación de soluciones tecnológicas y el cumplimiento estricto de tiempos y planes de trabajo.</p>
     </div>
-    <div class="div23"> 
+    <div class="div23">
       <p style="text-align: center;">01/2017 - 12/2019</p>
     </div>
-    <div class="div33"> 
+    <div class="div33">
       <p>Encargado de Finanzas en OM-Style (Autónomo-Emprendimiento): Desempeñé un rol crucial en la gestión financiera de OM-Style, una tienda en línea de maquillaje. Entre mis responsabilidades se incluyen el seguimiento de ventas, envíos, medios de pago y campañas publicitarias. Además, generé informes, estados financieros simplificados y pronósticos avanzados utilizando metodología Box-Jenkins y modelos como ARIMA, SARIMA, SARIMAX, GARCH, IGARCH e IGARCHX. También me encargué de la administración de la cuenta empresarial, realización de depósitos a distribuidores y negociación de cotizaciones con proveedores.</p>
     </div>
     <div class="div43"> 
@@ -243,12 +142,131 @@ grid-row-gap: 0px;
 </div>
 
 <!-- English CV -->
-<div class="cv en">
+<div id="en-content">
   <!-- Insert your English CV content here -->
+  <div id="en-content">
+    <br>
+    <div style="text-align: center;">
+      <div class="parent0">
+        <div class="div10"> </div>
+        <div class="div20">
+          <H1>Luis Francisco Venegas Villanueva</H1>
+          <p>Perla 3651, Residencial Loma Bonita, Zapopan, Jalisco, <a href="mailto:luis.venegas4416@alumnos.udg.mx" target="_blank">luis.venegas4416@alumnos.udg.mx</a></p>
+        </div>
+        <div class="div30">
+          <img style="max-width: 100%; border-radius: 50%;"  src="/Images/My project-1.jpg">
+        </div>
+      </div>
+    </div>
+    <div>
+      <H2>Professional Profile</H2>
+      <hr color="black" size="1px">
+      <p>Expert in Financial Administration and Law. Specialist in data analysis and forecasting using technologies such as advanced Excel, Power BI, R, and Python. Deep knowledge in transfer pricing, with a focus on technological solutions and predictive analysis. Seeking to drive innovations in the financial and legal fields through technology.</p>
+    </div>
+    <div>
+      <H2>Education</H2>
+      <hr color="black" size="1px">
+      <div class="parent1">
+        <div class="div1"><p>Bachelor's Degree in Financial Management and Systems, University of Guadalajara, University Center of Economic-Administrative Sciences (Specialization in investment fund management and elective area in advanced Excel and programming)</p></div>
+        <div class="div2"><p style="text-align: center;">01/2018 - 12/2022</p></div>
+        <div class="div3"><p>Bachelor's Degree in Law, National Autonomous University of Mexico, Faculty of Law, Distance Learning (Advanced postgraduate course in criminal law)</p></div>
+        <div class="div4"><p style="text-align: center;">06/2018 – 06/2023</p></div>
+        </div>
+    </div>
+    <div>
+      <H2>Courses and Certifications</H2>
+      <hr color="black" size="1px">
+      <div class="parent2">
+        <div class="div12">
+          <p>Diploma in Financial Education (Generation 32, CONDUSEF)</p>
+        </div>
+        <div class="div22">
+          <p style="text-align: center;">06/2019</p>
+        </div>
+        <div class="div32">
+          <p>Advanced Course on Time Series with R and Python</p>
+        </div>
+        <div class="div42">
+          <p style="text-align: center;">05/2022</p>
+        </div>
+        <div class="div52">
+          <p>Data Analysis with Python (Developer Certification, representing approximately 300 hours of coursework.)</p>
+        </div>
+        <div class="div62">
+          <p style="text-align: center;">06/2022</p>
+        </div>
+        <div class="div72">
+          <p>Learn SQL</p>
+        </div>
+        <div class="div82">
+          <p style="text-align: center;">06/2022</p>
+        </div>
+        </div>
+    </div>
+    <div>
+      <H2>Experience</H2>
+      <hr color="black" size="1px">
+    </div>
+    <div class="parent3">
+      <div class="div13">
+        <p>Floor Manager at Corporate ODE: I effectively coordinated activities and employees in large-scale exhibitions and conventions in venues such as Expo Guadalajara and Hilton Hotel. Reporting directly to the director and corporate clients, I gained experience in coordinating large teams, implementing technological solutions, and strictly adhering to timelines and work plans.</p>
+      </div>
+      <div class="div23">
+        <p style="text-align: center;">01/2017 - 12/2019</p>
+      </div>
+      <div class="div33">
+        <p>Finance Manager at OM-Style (Self-Employed-Entrepreneurship): I played a pivotal role in the financial management of OM-Style, an online makeup store. My responsibilities included tracking sales, shipments, payment methods, and advertising campaigns. Additionally, I generated reports, simplified financial statements, and advanced forecasts using Box-Jenkins methodology and models like ARIMA, SARIMA, SARIMAX, GARCH, IGARCH, and IGARCHX. I also managed the business account, made deposits to distr...
+        </div>
+      <div class="div43"> 
+        <p style="text-align: center;">01/2019 – 06/2022</p>
+      </div>
+      <div class="div53"> 
+        <p>Financial and Legal Coordinator at Sandoval and Associates: I collaborated in coordinating a wide variety of clients, both individual and corporate, in public and private sectors. I participated in financial analysis, resource distribution, annual planning, drafting and responding to official documents, resolution of ITEI information requests, among others. I also performed accounting capture, reviewed invoices according to state and federal regulations, implemented financial logistics mechanisms, o...
+        </div>
+      <div class="div63"> 
+        <p style="text-align: center;">01/2020 - 06/2021</p>
+      </div>
+      <div class="div73"> 
+        <p>Transfer Pricing Staff at KPMG Cárdenas Dosal: I conducted transfer pricing studies by analyzing financial statements and interpreting national and international contracts, identifying risks and specific contractual conditions. I ensured regulatory compliance and contributed to the implementation of corporate structures in national and international groups. I designed and implemented business intelligence tools using Power BI and VBA programming in Excel for the national transfer pricing practice.</p>
+      </div>
+      <div class="div83"> 
+        <p style="text-align: center;">06/2022 - Present</p>
+      </div>
+      </div>
+    <div>
+      <H2>Knowledge and Skills</H2>
+      <hr color="black" size="1px">
+      <div class="parent4">
+        <div class="div14">
+          <p>
+            <ul>
+              <li>English: B2</li>
+              <li>Excel: Expert (Programming, macros, power pivot, etc.)</li>
+              <li>Power BI: Advanced (DAX, M, dashboards, measures, and calculations)</li>
+              <li>Microsoft Office: Advanced (Word, PowerPoint, Azure, etc.)</li>
+              <li>Databases (Bloomberg Terminal, Capital IQ, etc.)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="div24">
+          <p>
+            <ul>
+              <li>Programming languages (R, Python, JS, HTML, CSS.)</li>
+              <li>Accounting (SIF, Contalink, CONTPAQi)</li>
+              <li>Outstanding ability to argue and persuade.</li>
+              <li>Generation and monitoring of CSF's and KPI's.</li>
+              <li>Excellent customer service, staff, and team attention.</li>
+            </ul>
+          </p>
+        </div>
+        </div>
+    </div>
+  </div>
 </div>
+<script src="script.js"></script>
 </body>
 <footer>
   <br>
-  <p style="text-align: center; font-size: xx-small;"><strong>LR: 08/07/2023</strong></p>
+  <p style="text-align: center; font-size: xx-small;"><strong>LR: 21/07/2023 <a href="https://github.com/lfvvillanueva" target="_blank">GitHub: lfvvillanueva</a></strong></p>
 </footer>
 </html>
