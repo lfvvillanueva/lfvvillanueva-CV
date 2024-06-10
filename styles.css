@@ -183,3 +183,7 @@ grid-row-gap: 0px;
 #centralBox button:hover {
   background: green; /* Fondo azul */
 }
+
+#centralBox p {
+  font-size: small;
+}
