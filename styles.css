@@ -164,7 +164,7 @@ grid-row-gap: 0px;
 
 /* Estilos para el texto */
 #centralBox p {
-  margin-top: 10%; /* Eliminar margen superior */
+  margin-top: 0%; /* Eliminar margen superior */
   margin-bottom: center; /* Empujar el botón hacia abajo */
   text-align: center; /* Alineación central del texto */
 }
